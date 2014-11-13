@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText 
+            android:id="@+id/num_from"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:text="0"/>
+        
+        <TextView 
+            android:id="@+id/txt_to"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="to"/>
+        
+        <EditText 
+            android:id="@+id/num_to"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:text="100"/>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/btn_play"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Play"/>
+    
+	<TextView 
+	    android:id="@+id/txt_result"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textAlignment="center"
+	    android:textSize="20sp"/>
+</LinearLayout>
