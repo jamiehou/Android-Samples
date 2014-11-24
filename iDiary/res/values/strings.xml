@@ -2,7 +2,11 @@
 <resources>
 
     <string name="app_name">iDiary</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_add">+</string>
+    <string name="title_activity_edit_diary">EditDiaryActivity</string>
+    <string name="diary_title">Title:</string>
+    <string name="diary_content">Content:</string>
+    <string name="diary_title_hint">Enter diary title</string>
+    <string name="diary_content_hint">Enter diary content here...</string>
 
 </resources>

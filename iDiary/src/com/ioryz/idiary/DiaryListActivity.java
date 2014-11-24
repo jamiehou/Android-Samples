@@ -6,12 +6,15 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 public class DiaryListActivity extends Activity {
 	
@@ -56,10 +59,17 @@ public class DiaryListActivity extends Activity {
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-    	// TODO Auto-generated method stub
-    	super.onCreateOptionsMenu(menu);
-    	MenuItem add = menu.add("+");
-    	add.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+    	MenuInflater inflater = getMenuInflater();
+    	inflater.inflate(R.menu.list, menu);
     	return true;
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	// TODO Auto-generated method stub
+//    	Toast.makeText(this, "Clicked!", Toast.LENGTH_SHORT).show();
+    	Intent intent = new Intent(this, EditDiaryActivity.class);
+    	startActivity(intent);
+    	return super.onOptionsItemSelected(item);
     }
 }
