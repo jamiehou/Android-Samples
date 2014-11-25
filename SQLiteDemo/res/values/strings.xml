@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SQLiteDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_create_db">Create DB</string>
+    <string name="button_update_db">Update DB</string>
+    <string name="button_delete_db">Delete DB</string>
+    <string name="button_insert">Insert</string>
+    <string name="button_update">Update</string>
+    <string name="button_query">Query</string>
+
+</resources>
