@@ -23,6 +23,12 @@
 	        android:hint="@string/diary_title_hint"/>
     </LinearLayout>
     
+    <DatePicker 
+        android:id="@+id/dp_add_diary_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"/>
+    
     <TextView 
         android:id="@+id/lbl_diary_content"
         android:layout_width="wrap_content"

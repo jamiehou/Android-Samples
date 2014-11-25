@@ -3,6 +3,7 @@
 
     <string name="app_name">iDiary</string>
     <string name="action_add">+</string>
+    <string name="action_save">Save</string>
     <string name="title_activity_edit_diary">EditDiaryActivity</string>
     <string name="diary_title">Title:</string>
     <string name="diary_content">Content:</string>
