@@ -28,7 +28,8 @@ public class DBHelper extends SQLiteOpenHelper {
 		Log.i(TAG, "Create DB");
 		db.execSQL("create table " + DBDefiniations.TBL_DIARY + "(" + DBDefiniations.COL_DIARY_ID + 
 				" integer primary key autoincrement, " + DBDefiniations.COL_DIARY_TITLE + 
-				" varchar(50), " + DBDefiniations.COL_DIARY_CONTENT + " varchar(200))");
+				" varchar(50), " + DBDefiniations.COL_DIARY_DATE + " time not null default current_timestamp, " + 
+				DBDefiniations.COL_DIARY_CONTENT + " varchar(200))");
 	}
 
 	@Override

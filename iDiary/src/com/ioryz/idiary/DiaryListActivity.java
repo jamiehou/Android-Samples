@@ -36,7 +36,8 @@ public class DiaryListActivity extends Activity {
         setContentView(R.layout.activity_list);
         
         diaryList = (ListView) findViewById(R.id.list_diary);
-        SimpleAdapter adapter = new SimpleAdapter(this, getDiaryListData(), R.layout.cell_diary, new String[]{DIARY_TITLE, DIARY_DATE}, new int[]{R.id.txt_diary_title, R.id.txt_diary_date});
+        SimpleAdapter adapter = new SimpleAdapter(this, getDiaryListData(), R.layout.cell_diary, 
+        		new String[]{DIARY_TITLE, DIARY_DATE}, new int[]{R.id.txt_diary_title, R.id.txt_diary_date});
         diaryList.setAdapter(adapter);
         diaryList.setOnItemClickListener(new DiaryItemClickListener());
     }
@@ -45,14 +46,15 @@ public class DiaryListActivity extends Activity {
     	Log.i(TAG, "get diary list data...");
     	DBHelper dbHelper = new DBHelper(DiaryListActivity.this, DBDefiniations.TBL_DIARY);
     	SQLiteDatabase db = dbHelper.getReadableDatabase();
-    	Cursor cursor = db.query(DBDefiniations.TBL_DIARY, new String[]{DBDefiniations.COL_DIARY_ID, DBDefiniations.COL_DIARY_TITLE, DBDefiniations.COL_DIARY_CONTENT}, 
+    	Cursor cursor = db.query(DBDefiniations.TBL_DIARY, new String[]{DBDefiniations.COL_DIARY_ID, 
+    			DBDefiniations.COL_DIARY_DATE, DBDefiniations.COL_DIARY_TITLE, DBDefiniations.COL_DIARY_CONTENT},
     			null, null, null, null, null);
     	diaryData = new ArrayList<Map<String, String>>();
     	while (cursor.moveToNext()) {
     		Map<String, String> map = new HashMap<String, String>();
     		map.put(DIARY_ID, String.valueOf(cursor.getInt(cursor.getColumnIndex(DBDefiniations.COL_DIARY_ID))));
     		map.put(DIARY_TITLE, cursor.getString(cursor.getColumnIndex(DBDefiniations.COL_DIARY_TITLE)));
-    		map.put(DIARY_DATE, "2014-11-25");
+    		map.put(DIARY_DATE, cursor.getString(cursor.getColumnIndex(DBDefiniations.COL_DIARY_DATE)));
     		diaryData.add(map);
     	}
     	Log.i(TAG, "get diary list data complete...");

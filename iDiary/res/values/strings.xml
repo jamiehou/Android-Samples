@@ -6,8 +6,12 @@
     <string name="action_save">Save</string>
     <string name="title_activity_edit_diary">EditDiaryActivity</string>
     <string name="diary_title">Title:</string>
+    <string name="diary_date">Date:</string>
     <string name="diary_content">Content:</string>
     <string name="diary_title_hint">Enter diary title</string>
-    <string name="diary_content_hint">Enter diary content here...</string>
+    <string name="diary_date_hint">Touch to select date</string>
+    <string name="diary_content_hint">Enter diary content here</string>
+    
+    <string name="msg_form_not_empty">Please make each field not empty!</string>
 
 </resources>
