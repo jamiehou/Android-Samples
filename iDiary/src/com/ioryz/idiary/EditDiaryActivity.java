@@ -115,7 +115,7 @@ public class EditDiaryActivity extends Activity {
 					
 					@Override
 					public void onDateSet(DatePicker v, int y, int m, int d) {
-						String dateStr = Utils.getDateStrByYMD(y, m, d, Constants.DATE_FORMAT);
+						String dateStr = DateUtil.getDateStr(y, m, d);
 						txtDate.setText(dateStr);
 					}
 				}, 2014, 10, 26);
