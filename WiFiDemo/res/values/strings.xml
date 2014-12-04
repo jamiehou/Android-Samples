@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiFiDemo</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="enable_wifi">Enable WiFi</string>
+    <string name="disable_wifi">Disable WiFi</string>
+    <string name="check_wifi_status">Check WiFi Status</string>
+    
+    <string name="msg_wifi_enable">Proceed WiFi enabling.</string>
+    <string name="msg_wifi_disable">Proceed WiFi disabling.</string>
+    <string name="msg_wifi_already_enabled">WiFi is enabled, no need to enable again.</string>
+    <string name="msg_wifi_already_disabled">WiFi is disabled, no need to disable again.</string>
+    <string name="msg_wifi_proceeding">WiFi is proceeding status change, please wait.</string>
+    <string name="msg_wifi_status_unknow">Unknown WiFi status, please restart app to fix the issue.</string>
+    <string name="msg_wifi_status_enabled">WiFi status: Enabled</string>
+    <string name="msg_wifi_status_disabled">WiFi status: Disabled</string>
+    <string name="msg_wifi_status_enabling">WiFi status: Enabling</string>
+    <string name="msg_wifi_status_Disabling">WiFi status: Disabling</string>
+
+</resources>
