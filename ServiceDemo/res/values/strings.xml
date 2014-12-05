@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ServiceDemo</string>
+    <string name="start_nobind_service">Start no-bind service</string>
+    <string name="stop_nobind_service">Stop no-bind service</string>
+    <string name="bind_service">Bind service</string>
+    <string name="transact_bind_service">Transact bind service</string>
+    <string name="unbind_service">Unbind service</string>
+    
+</resources>

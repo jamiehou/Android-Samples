@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button 
+        android:id="@+id/btn_start_nobind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_nobind_service"/>
+    
+    <Button 
+        android:id="@+id/btn_stop_nobind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_nobind_service"/>
+    
+    <Button 
+        android:id="@+id/btn_bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bind_service"/>
+    
+    <Button 
+        android:id="@+id/btn_transact_bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/transact_bind_service"/>
+    
+    <Button 
+        android:id="@+id/btn_unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unbind_service"/>
+
+</LinearLayout>
