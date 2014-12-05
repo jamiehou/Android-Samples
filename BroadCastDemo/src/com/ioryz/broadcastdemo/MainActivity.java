@@ -46,7 +46,8 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				Log.i(TAG, "Register button clicked...");
 				receiver = new DynamicReceiver();
-				IntentFilter filter = new IntentFilter(ACTION_MSG_RECEIVED);
+				IntentFilter filter = new IntentFilter();
+				filter.addAction(ACTION_MSG_RECEIVED);
 				MainActivity.this.registerReceiver(receiver, filter);
 				Log.i(TAG, "Receiver registered...");
 			}
