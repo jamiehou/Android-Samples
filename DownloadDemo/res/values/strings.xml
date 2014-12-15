@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DownloadDemo</string>
+    <string name="download_url">Download Url:</string>
+    <string name="enter_download_url">Enter url for download</string>
+	<string name="download_to_print">Download to Print</string>
+	<string name="download_to_sdcard">Download to SD Card</string>
+
+	<string name="msg_invalid_download_url">Invalid download url. Please check url and try again.</string>
+	<string name="msg_download_complete">Download Complete</string>
+	<string name="msg_download_fail">Download Failed</string>
+	<string name="msg_file_exist">File already exist</string>
+	<string name="msg_url_empty">Please enter an url for download</string>
+</resources>
